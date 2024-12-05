@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 // import Header1 from './components/Header1/Header1';
@@ -55,11 +56,38 @@ const App = () => {
         {/* <Footer1 /> */}
       </div>
     </Router>
+=======
+import React from 'react';
+import Navbar from './Components/Navbar/Navbar';
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './pages/Homepage/Homepage';
+import MyProducts from './pages/My Products/MyProducts';
+import Orders from './pages/Orders/Orders';
+import Profile from './pages/Profile/Profile';
+import Footer1 from './Components/Footer1/Footer1';
+import ScrollToTopButton from './Components/ScrollToTopButton/ScrollToTopButton';
+
+const App = () => {
+
+  return (
+    <div className="App">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/My Products" element={<MyProducts />} />
+        <Route path="/Orders" element={<Orders />} />
+        <Route path="/Profile" element={<Profile />} />
+      </Routes>
+      <Footer1 />
+      <ScrollToTopButton />
+    </div>
+>>>>>>> 0b3916417539ff72642527db05b9bd46c6594865
   );
 };
 
 export default App;
 
+<<<<<<< HEAD
 
 
 
@@ -131,3 +159,5 @@ export default App;
 
 // export default App;
 
+=======
+>>>>>>> 0b3916417539ff72642527db05b9bd46c6594865

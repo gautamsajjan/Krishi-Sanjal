@@ -1,0 +1,136 @@
+.add {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: calc(30% + 40px);
+    height: calc(70% - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.add .pop {
+    width: max(30vw + 30px, 430px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeInPopUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.close-btn {
+    position: absolute;
+    right: 15px;
+    color: black ;
+    border-radius: 2px solid 4px; 
+    font-size: 16px; 
+    cursor: pointer;
+    width: 25px; 
+    height: 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.close-btn:hover {
+    background-color:green;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.upload-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.upload-img p {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.upload-img label {
+    cursor: pointer;
+}
+
+.upload-img img {
+    width: 70px;
+    height: 70px;
+    border: 2px dashed #ccc;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
+    transition: border-color 0.3s ease;
+}
+
+.upload-img img:hover {
+    border-color: #28a745;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: green;
+}
+
+.ppstock, .p-nut-sto {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+button.btn1 {
+    width: 100%;
+    padding: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
