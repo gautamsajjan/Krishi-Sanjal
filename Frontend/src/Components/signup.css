@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #A8D08D, #F4A300); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    flex-direction: column; 
+  }
+  
+  header {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .header-container .logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .header-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .form {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 90%;
+    margin-top: 20px;
+    backdrop-filter: blur(50px);
+    border: 2px solid rgba(255, 255, 0, .2);
+  }
+  
+  .form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4CAF50;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .input-field {
+    position: relative;
+    flex: 1 1 calc(50% - 20px); 
+  }
+  
+  .input-field.full-width {
+    flex: 1 1 100%; 
+  }
+  
+  .input-field input,
+  .input-field select {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 6px;
+    background: transparent;
+    color: #333;
+  }
+  
+  .input-field input:focus,
+  .input-field select:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+  }
+  
+  #farmerFields {
+    display: none; 
+  }
+  
+  #farmerFields .input-field {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  label input {
+    margin-right: 5px;
+  }
+  
+  button.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background: #45a049;
+  }
+  
+  p a {
+    color: #4CAF50; 
+    text-decoration: none; 
+    font-weight: normal; 
+  }
+  
+  p a:hover {
+    color: #45a049; 
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 1024px) {
+    .form {
+      padding: 50px;
+      max-width: 800px;
+      width: 100%;
+    }
+  
+    .header-container h1 {
+      font-size: 32px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .input-group .input-field {
+      flex: 1 1 100%; 
+    }
+  
+    .form {
+      padding: 40px;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .input-group .input-field {
+      flex: 1 1 100%; 
+    }
+  
+    .form {
+      padding: 30px;
+    }
+  }
+  
