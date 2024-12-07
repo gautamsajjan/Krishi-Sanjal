@@ -1,0 +1,164 @@
+.user-profile-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.user-profile-container.expanded {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 92%;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 50px;
+}
+
+
+.profile-sidebar {
+  width: 35%; 
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+
+.profile-sidebar.expanded {
+  width: 35%;
+}
+
+.profile-content {
+  flex: 1;
+  padding: 20px;
+  width: 100%;
+}
+
+.profile-image-wrapper {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-image-wrapper:hover {
+  border-color: #007bff;
+  cursor: pointer;
+}
+
+.profile-image:hover {
+  opacity: 0.7;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.profile-image-wrapper:hover{
+  display: block;
+}
+
+
+#fileInput {
+  display: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+  margin-bottom: 15px; 
+}
+
+.row input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-tabs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.profile-tabs button {
+  background-color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.profile-tabs button.active {
+  background-color: #ddd;
+}
+
+.account-tab {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.account-tab h2 {
+  margin-bottom: 15px;
+}
+
+.account-tab input[type="text"],
+.account-tab input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.account-tab button {
+  background-color: rgba(1, 116, 1, 0.895);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.password-tab {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.password-tab h2 {
+  margin-bottom: 15px;
+}
+
+.password-tab input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.password-tab button {
+  background-color: rgba(1, 116, 1, 0.895);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.notifications-tab {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.notifications-tab p {
+  margin-top: 10px;
+}

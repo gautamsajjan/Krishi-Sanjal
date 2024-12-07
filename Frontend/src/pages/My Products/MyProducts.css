@@ -1,0 +1,91 @@
+.Products{
+    width: 100vw;
+    background-color: rgba(221, 232, 241);
+}
+
+.bg{
+    display: flex;
+    align-items: center;
+    margin: 0 140px;
+    padding-top: 20px;
+}
+
+.img1{
+    max-height: 200px;
+    position: relative;
+    left: 100px;
+}
+
+.img1 img{
+    height: 200px;
+    width: 400px;
+}
+
+.txt2{
+    width: 500px;
+}
+
+.txt2 p{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.My-Products {
+    font-family: Arial, sans-serif;
+  }
+  
+  .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1.7fr));
+    gap: 20px;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+  .article-wrapper {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .article-body {
+    padding: 16px;
+  }
+  
+  .article-body h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+  
+  .article-body p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .article-body button{
+    padding: 8px;
+    border: 1px solid;
+    color: white;
+    background-color: rgba(1, 116, 1, 0.895);
+    border-radius: 3px;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
