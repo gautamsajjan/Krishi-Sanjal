@@ -1,0 +1,71 @@
+.middle2{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    width: 1100px;
+    max-height: 300px;
+    margin: 100px;
+}
+
+.middle2 img{
+    min-height: 100px;
+    width: 250px;
+}
+
+.shoppr, .profile, .cartpr{
+      border: 2px solid rgba(237, 233, 233, 0.961);
+      border-radius: 20px;
+      width: 280px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      line-height: 60px;
+      min-height: 375px;
+      position: relative;
+      top: 40px;
+      margin-bottom: 60px;
+}
+
+.h31, .h32, .h33{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.h33{
+    position: relative;
+    bottom: 13px;
+}
+
+.p3{
+    position: relative;
+    bottom: 14px;
+}
+
+.p1, .p2, .p3{
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.b1 button, .b2 button, .b3 button{
+    padding: 8px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 30px;
+    width: 180px;
+    cursor: pointer;
+}
+
+.b2 button{
+    position: relative;
+    top: 17px;
+}
